@@ -186,13 +186,13 @@ class PlexAlertListener(threading.Thread):
 						title = f"{item.title} ({item.year})"
 						genres: list[Genre] = item.genres[:3]
 						stateStrings.append(f"{', '.join(genre.tag for genre in genres)}")
-						largeText = "Watching a movie"
+						largeText = "Watching a Movie"
 						thumb = item.thumb
 					else:
 						title = item.grandparentTitle
 						stateStrings.append(f"S{item.parentIndex:02}E{item.index:02}")
 						stateStrings.append(item.title)
-						largeText = "Watching a TV show"
+						largeText = "Watching a TV Show"
 						thumb = item.grandparentThumb
 					if state != "playing":
 						if config["display"]["useRemainingTime"]:

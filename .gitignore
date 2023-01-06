@@ -3,3 +3,4 @@ cache.json
 lint.bat
 console.log
 Showcase.psd
+*/__pycache__
